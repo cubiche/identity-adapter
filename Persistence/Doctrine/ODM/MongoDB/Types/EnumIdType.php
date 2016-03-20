@@ -10,13 +10,11 @@
  */
 namespace Cubiche\Infrastructure\Identity\Persistence\Doctrine\ODM\MongoDB\Types;
 
-use Cubiche\Infrastructure\Model\Persistence\Doctrine\ODM\MongoDB\Types\NativeValueObjectType;
-
 /**
  * Enum Id Type Class.
  *
  * @author Karel Osorio Ramírez <osorioramirez@gmail.com>
  */
-abstract class EnumIdType extends NativeValueObjectType
+abstract class EnumIdType extends IdType
 {
 }
