@@ -8,24 +8,24 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Cubiche\Infrastructure\Identity\Persistence\Doctrine\ODM\MongoDB\Types;
+namespace Cubiche\Infrastructure\Identity\Doctrine\ODM\MongoDB\Types;
 
-use Cubiche\Domain\Identity\UUID;
+use Cubiche\Domain\Identity\IntegerId;
 
 /**
- * UUID Type Class.
+ * Integer Id Type Class.
  *
  * @author Karel Osorio Ramírez <osorioramirez@gmail.com>
  */
-class UUIDType extends StringIdType
+class IntegerIdType extends IdType
 {
     /**
      * {@inheritdoc}
      *
-     * @see \Cubiche\Infrastructure\Identity\Persistence\Doctrine\ODM\MongoDB\Types\StringIdType::targetClass()
+     * @see \Cubiche\Infrastructure\Model\Doctrine\Common\Types\ValueObjectTypeInterface::targetClass()
      */
     public function targetClass()
     {
-        return UUID::class;
+        return IntegerId::class;
     }
 }

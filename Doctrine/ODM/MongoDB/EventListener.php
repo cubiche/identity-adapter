@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Cubiche\Infrastructure\Identity\Persistence\Doctrine\ODM\MongoDB;
+namespace Cubiche\Infrastructure\Identity\Doctrine\ODM\MongoDB;
 
-use Cubiche\Infrastructure\Identity\Persistence\Doctrine\ODM\MongoDB\Types\DynamicIdType;
+use Cubiche\Infrastructure\Identity\Doctrine\ODM\MongoDB\Types\DynamicIdType;
 use Doctrine\ODM\MongoDB\Event\LoadClassMetadataEventArgs;
 use Doctrine\ODM\MongoDB\Mapping\MappingException;
 use Doctrine\ODM\MongoDB\Types\Type;
